@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary!</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Body Styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ff9699d3, #fad0c4, #26ffff);
+            color: #333;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* Outer Wrapper for Vertical Scrolling */
+        .wrapper {
+            width: 100%;
+            max-width: 480px; /* Fit within a phone screen */
+            height: 90vh; /* Full height minus a bit of padding */
+            overflow-y: scroll; /* Enable vertical scrolling */
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            scrollbar-width: thin; /* Firefox scrollbar styling */
+            scrollbar-color: #e91e63 rgba(0, 0, 0, 0.1); /* Scrollbar colors */
+        }
+
+        /* Styling the Scrollbar for Chrome, Edge, Safari */
+        .wrapper::-webkit-scrollbar {
+            width: 8px; /* Scrollbar width */
+        }
+
+        .wrapper::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.1); /* Track color */
+        }
+
+        .wrapper::-webkit-scrollbar-thumb {
+            background: #e91e63; /* Scrollbar thumb color */
+            border-radius: 10px;
+        }
+
+        /* Inner Container */
+        .container {
+            width: 100%;
+            padding-bottom: 20px; /* Add space for better scrolling */
+        }
+
+        /* Header Styling */
+        header h1 {
+            font-size: 2rem;
+            color: #e91e63;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Slideshow */
+        .slideshow {
+            margin-bottom: 20px;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.7s ease-in-out;
+        }
+
+        .slides img {
+            width: 100%;
+            border-radius: 15px;
+            border: 4px solid #fff;
+        }
+
+        /* Message Section */
+        .message {
+            padding: 20px;
+            background: #ffe8ec;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .message p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .message .highlight {
+            color: #e91e63;
+            font-weight: bold;
+            background: #fff3f5;
+            padding: 3px 5px;
+            border-radius: 5px;
+        }
+
+        /* Slider Section */
+        .slider-section {
+            margin-bottom: 20px;
+        }
+
+        .slider-section p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            color: #e91e63;
+        }
+
+        .slider-section input[type="range"] {
+            width: 100%;
+            height: 5px;
+            border-radius: 5px;
+            background: #ddd;
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        .slider-section input[type="range"]::-webkit-slider-thumb {
+            width: 20px;
+            height: 20px;
+            background: #e91e63;
+            border-radius: 50%;
+            cursor: pointer;
+            -webkit-appearance: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .slider-section input[type="range"]::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            background: #e91e63;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        /* Footer Styling */
+        footer {
+            font-size: 0.8rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <!-- Header -->
+            <header>
+                <h1>Happy Anniversary, My Love!</h1>
+                <p>Celebrating our very first year together. ❤️</p>
+            </header>
+
+            <!-- Slideshow -->
+            <div class="slideshow">
+                <div class="slides">
+                    <img src="JPEG1.jpg" alt="Photo 1">
+                    <img src="JPEG2.jpg" alt="Photo 2">
+                    <img src="JPEG3.jpg" alt="Photo 3">
+                    <img src="JPEG4.jpg" alt="Photo 4">
+                </div>
+            </div>
+
+            <!-- Message Section -->
+            <section class="message">
+                <h1>Happy Anniversary, My Love!</h1>
+                <p>
+                    As I sit down to write this, my heart is overwhelmed with love, gratitude, and joy. Today marks another year of our incredible journey together, and I find myself falling more in love with you every single day. 
+                </p>
+                <p>
+                    From the moment we met, you’ve brought a kind of magic into my life that I never knew existed. Your laughter is my favorite melody, your smile my favorite sight, and your love my greatest treasure. You’ve shown me what it means to love unconditionally, to cherish deeply, and to live fully. 
+                </p>
+                <h2>Looking Back</h2>
+                <p>
+                    As I think back on the time we’ve spent together, I’m flooded with memories—each one more beautiful than the last. The quiet moments where we just held each other, the adventures that made us laugh until our sides hurt, the challenges that made us stronger, and the little everyday things that reminded me how lucky I am to have you.
+                </p>
+                <p>
+                    <span class="highlight">You are my rock, my partner, my best friend, and the love of my life.</span> With you, I’ve found a home—not just in a place, but in your heart. 
+                </p>
+                <h2>Our Love</h2>
+                <p>
+                    There’s something so special about the bond we share. It’s not just about the grand gestures or the big milestones—it’s the small, quiet ways you show your love. The way you hold my hand when I need comfort, the way you listen to me, the way you encourage me to chase my dreams. It’s in the way you love me, wholeheartedly and without reservation.
+                </p>
+                <p>
+                    Your love has taught me so much. It’s taught me patience, kindness, and the true meaning of partnership. It’s taught me that love isn’t about perfection, but about accepting and celebrating each other as we are. And for that, I am eternally grateful.
+                </p>
+                <h2>Looking Ahead</h2>
+                <p>
+                    As we celebrate this special day, I can’t help but dream of the future we’re building together. I look forward to more laughter, more adventures, more quiet nights, and more moments where we simply enjoy being with each other. I look forward to a lifetime of loving you, of growing with you, and of cherishing the incredible bond we share.
+                </p>
+                <p>
+                    No matter what the future holds, one thing will always remain true: <span class="highlight">I will love you with all my heart, for all my days.</span>
+                </p>
+                <h2>Thank You</h2>
+                <p>
+                    Thank you, my love, for being the amazing person you are. Thank you for loving me, for supporting me, and for bringing so much light into my life. Thank you for the laughter, the tears, the memories, and the love. You are my everything, and I am so incredibly lucky to call you mine.
+                </p>
+                <p>
+                    On this special day, I want you to know how deeply I love you, how much I appreciate you, and how excited I am for all the wonderful moments we have ahead of us. Happy anniversary, my dearest. Here’s to us, to our love, and to the beautiful journey we’re on together.
+                </p>
+            </section>
+
+            <!-- Slider Section -->
+            <div class="slider-section">
+                <p>Adjust Background Music Volume:</p>
+                <input id="volume-slider" type="range" min="0" max="100" value="50">
+            </div>
+
+            <!-- Footer -->
+            <footer>
+                <p>Made with love for our anniversary. 🌸</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="bg-music" controls loop autoplay >
+        <source src="sinta.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        // Slideshow Script
+        const slides = document.querySelector('.slides');
+        let currentIndex = 0;
+
+        function showNextSlide() {
+            currentIndex++;
+            if (currentIndex >= slides.children.length) {
+                currentIndex = 0;
+            }
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        setInterval(showNextSlide, 1000); // Change slide every 3 seconds
+
+        // Volume Slider Script
+        const volumeSlider = document.getElementById('volume-slider');
+        const bgMusic = document.getElementById('bg-music');
+
+        // Set initial volume
+        bgMusic.volume = volumeSlider.value / 100;
+
+        // Update volume based on slider
+        volumeSlider.addEventListener('input', () => {
+            bgMusic.volume = volumeSlider.value / 100;
+        });
+    </script>
+</body>
+</html>
